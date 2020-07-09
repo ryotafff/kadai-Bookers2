@@ -4,7 +4,7 @@
 <br>
 
 
-<%= render 'books/list', {book: @book, user: @user} %>
+<%= render 'books/list', {book: @book_new, user: @user} %>
 
 
 
@@ -24,9 +24,6 @@
   </thead>
 
 <tbody>
-  <% @books.each do |book| %>
   <tr>
-<td><%=book.title %></td>
-<td><%=book.body %></td>
-
- <% end %>
+<td><%=@book.title %></td>
+<td><%=@book.body %></td>
